@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Business Frontpage - Start Bootstrap Template</title>
+    <title>СтопКомар - обработка от комаров в Саратове</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +37,10 @@ html, body {font-family:'Roboto'; }
  line-height: 0.9;
  font-weight: bold;
  font-family:'Roboto';
- font-size:15pt;
- margin-left: 20px;
- margin-right: 20px;
- margin-top: 0px;
+ font-size:12pt;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-top: 4px;
 }
 
 .title_h1 {
@@ -49,40 +49,145 @@ html, body {font-family:'Roboto'; }
   margin-bottom: 20px;
    margin-top: 5px;
 }
-</style>
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.product-price {
+    display: inline-block;
+    position: relative;
+    min-height: 4.7rem;
+}
+
+.product-price-old {
+    color: #636466;
+    font-weight: 700;
+    display: block;
+    margin-bottom: -.3rem;
+    text-decoration: line-through;
+}
+
+.product-price-current {
+    display: block;
+    color: #000;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-top: 0.0rem;
+}
+
+.highlighted-text-message {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    vertical-align: middle;
+    color: #333;
+}
+
+.highlighted-text-primary {
+    background: #fff200!important;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+ .modal-header, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+</style>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
+ <div class="modal fade" id="myModal" role="dialog" >
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;">ОСТАВЬТE ЗАЯВКУ</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+<form role="form" id="gform-jquery">
+  <div class="form-group">
+    <label for="email" style="color:black;">Имя</label>
+       <input name="entry.1876161667" class="form-control" id="pwd">
+  </div>
+  <div class="form-group">
+    <label for="pwd" style="color:black;">Телефон</label>
+
+	<input name="entry.740778092" class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
+  </div>
+  <button type="submit" class="btn btn-success btn-block" style="background:#5cb85c ;" style="width=12px;">МЫ ВАМ ПЕРЕЗВОНИМ</button>
+</form>
+        </div>
+     <div class="modal-footer">
+          НАШИ КОНТАКТЫ<br>53-47-53<br>58-33-08
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #E8E8E8; ">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
 
-                	<form role="form">
-
-  <div class="form-group" width="1px" style="    margin-bottom: 0px; margin-top: 7px;">
+         
    <div class="row" width="100%">
-<div class="col-md-4">
+<div class="col-md-6">
+<div class="container-fluid bg-1">
+<h4 style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;">СТОПКОМАР САРАТОВ</h4>
+<h4 style="margin-top:0px">Обработка участков от комаров в саратовской области</h4>
 </div>
-    <div class="col-md-2">
+</div>
 
-      <input class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
-
-    </div>
     <div class="col-md-2">
-      <button type="submit" class="btn btn-warning btn-block">МЫ ПЕРЕЗВОНИМ</button>
+    
     </div>
 <div class="col-md-4">
+<div class="container-fluid bg-1 push-left; font-weight:bold">
+ <h4 style="margin-top:5px">Телефоны: <br>58-33-08, 53-47-53</h4>
+ </div>
 </div>
   </div>
-  </div>
+
   
   
   
-  
-</form>			
+			
 				
     
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,6 +202,8 @@ html, body {font-family:'Roboto'; }
 	
 <div class="container" style="margin-top:40px;">
 
+
+
   <div class="row">
 
 <div  style=" background: url(images/obrabotka.png) no-repeat; background-color: rgba(51,196,50,100);  margin-bottom:30px;">
@@ -108,18 +215,18 @@ html, body {font-family:'Roboto'; }
 <h1 style="font-size: 34px; color: #FF600A;  font-weight: bold; margin-top:0px">ПОЛУЧИ ОБРАБОТКУ ОТ КЛЕЩЕЙ БЕСПЛАТНО</h1>
 </div>
 <div class="col-md-4">
-<div style="width=200px; margin-left: 50px; margin-right: 50px; margin-top: 40px; margin-bottom: 40px; border-radius: 5px; background:rgba(100,100,100,0.5); padding: 10px 40px 30px 40px;">
-<form role="form" >
+<div style="width=200px; margin-left: 50px; margin-right: 50px; margin-top: 40px; margin-bottom: 40px; border-radius: 5px; background:rgba(100,100,100,0.5); padding: 10px 40px 30px 40px; color:white;">
+<form id="gform-jquery-2" role="form" >
   <div class="form-group">
     <label for="email" style="color:white;">Имя</label>
-       <input class="form-control" id="pwd">
+       <input name="entry.1876161667" class="form-control" id="pwd">
   </div>
   <div class="form-group">
     <label for="pwd" style="color:white;">Телефон</label>
 
-	<input class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
+	<input name="entry.740778092" class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
   </div>
-  <button type="submit" class="btn btn-danger btn-block" style="background:red;" style="width=12px;">ЗАКАЗАТЬ</button>
+  <button type="submit" class="btn btn-danger btn-block" style="background:#FF621F ;" style="width=12px;">ЗАКАЗАТЬ</button>
 </form>
 </div></div>
 
@@ -130,9 +237,9 @@ html, body {font-family:'Roboto'; }
   <div class="col-md-8" >
     <h2>Раздражают комары?</h2>
 	
-	Перепробовали все способы борьбы с кровососами, но они продолжают портить ваш отдых? Дым от "спиральки" сдувает любой ветерок? Новомодные ловушки для комаров наоборот привлекают насекомых со всей округи и совсем не помогают?
+	Перепробовали все способы борьбы с кровососами, но они продолжают портить отдых на вашем участке? Дым от "спиральки" сдувает любой ветерок? Новомодные ловушки для комаров наоборот привлекают насекомых со всей округи и совсем не помогают?
 	Инсектицидные крема? Вы действительно думаете, что обмазывать ими себя и своих близких с ног до головы - хорошая идея? Эти ужасно раздражающие существа способоны свести на нет всё удовольствие от отдыха за городом. А если учесть, 
-	что комары могут переносить различные вирусные заболевания, то становится ясно - от комаров нужно избавиться. Кто знает, кого он мог кусать до вас?
+	что комары могут переносить различные вирусные заболевания, то становится ясно - от комаров нужно избавиться. Кто знает, кого они кусали до вас?
     </div>
 	  <div class="col-md-4">
 	  <img src="images/komar.jpg" alt="Mountain View" style="width:100%;">
@@ -146,113 +253,244 @@ html, body {font-family:'Roboto'; }
   <div class="col-md-8" >
     <h2>Клещи опасны для жизни</h2>
 	
-	Половина клещей переносит энцефалит. Если вовремя не среагировать, болезнь приводит к летальному исходу. Если вас укусил клещ, то ни в коем случае не выбрасывайте его. Насекомое нужно нести в клиническую лабораторию для анализа. Своевременно среагировав на 
-	укус вы можете избежать развития этой тяжёлой болезни. Эти маленькиие но коварные насекомые могут заставить вас в любой момент бросить все дачные дела, оставив за спиной недожаренный шашлычок или растопленную баньку. Выходные будут испорчены. 
+	Половина клещей в саратовской области переносит энцефалит. Если вовремя не среагировать, болезнь приводит к летальному исходу. Если вас укусил клещ, то ни в коем случае не выбрасывайте его. Насекомое нужно нести в клиническую лабораторию для анализа. Своевременно среагировав на 
+	укус вы можете избежать развития этой тяжёлой болезни. Эти маленькиие но коварные насекомые могут заставить в любой момент бросить все дела, оставив за спиной недожаренный шашлык или растопленную баню. Выходные будут испорчены. 
     </div>
 
   </div>
   
-   <h2>Выход есть - обработка участка инсектицидом</h2>
+   <h2>Выход есть - обработка участка от насекомых</h2>
 	
-	Специальный, безвредный для человека, раствор распыляется на места размножения насекомых с помощью генератора холодного тумана. Паразиты больше не смогут плодиться на вашем участке и больше не принесут вам проблем.
+	Специальный, безвредный для человека, раствор распыляется на места размножения и обитания насекомых с помощью генератора холодного тумана. Паразиты не смогут плодиться на вашем участке и больше не принесут вам проблем.
   
-  <hr>
-  	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/gooddacha.jpg" data-natural-width="1500" data-natural-height="1000" style="height: 400px;">
+    	<div style="margin-top:30px;" class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/backg.jpg" data-natural-width="850" data-natural-height="531" style="height: 200px;">
 
 
 	
 	<div class="container-fluid bg-1 text-center">
-	<h1 class="title_h1">ОБРАБОТКА УЧАСТКА ОТ НАСЕКОМЫХ</h1>
-	<table>
-  <tr>
-    <td>    <img src="images/leaf.png" alt="Bird">
-    <h3 class="trigger_text">Безопасно для здоровья</h3></td>
-	 <td>    <img src="images/pig.png" alt="Bird">
-    <h3 class="trigger_text">Экономит ваши деньги</h3></td>
-	  <td>    <img src="images/insects.png" alt="Bird">
-    <h3 class="trigger_text">Все виды паразитов</h3></td>
-  </tr>
-</table>
-	
+<div class="row" style="margin-top:10px;">
+<div class="col-md-4">
+   <img src="images/leaf.png" alt="Bird">
+    <h3 class="trigger_text">Безопасно: безвредно для детей, домашних животных и растений</h3>
+	  </div>
+	 <div class="col-md-4">   <img src="images/pig.png" alt="Bird">
+    <h3 class="trigger_text">Выгодно: обработай участок и забудь о средствах от комаров на полтора месяца</h3>  </div>
+	 <div class="col-md-4">   <img src="images/insects.png" alt="Bird">
+    <h3 class="trigger_text">Надёжно: бесплатное обслуживание в течение гарантийного срока - 45 дней</h3>  </div>
+  </div>
+
+  </div>
+	 
 	
 
-  </div></div>
+  </div>
+
+   
+   
+  <div class="row" style="margin-top:100px;">
+   <div class="col-md-2">
+   <div style="width:160px; background:green;" class="img-circle">
+    <img src="images/expert3.png" alt="Bird" style="width:160px">
+
+   </div>   
+      </div>   
+   <div class="col-md-4">
+   <h1>7 лет на рынке</h1>
+   Многолетний опыт борьбы с комарами и другими вредителями в Саратове, Энгельсе и области, опытные сотрудники, сотни очищенных участков и довольных клиентов.
+   </div>   
+   
+   
+
+   <div class="col-md-4">
+   <h1>Уникальный рецепт</h1>
+   Собственные смеси инсектицидных растворов на основе безопасных, сертифицированных препаратов. За годы работы мы смогли подобрать наиболее эффективные сочетания компонентов.
+   </div>   
+   
+         <div class="col-md-2">
+   <div style="width:160px; background:green;" class="img-circle">
+    <img src="images/chem3.png" alt="Bird" style="width:160px;">
+
+   </div>   
+      </div>   
+  </div>
   
-  <div class="row">
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    
-  </div>
-  <hr>
-    <div class="row">
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    
-  </div>
-  	
-	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/chesatsya_1.jpg" data-natural-width="1800" data-natural-height="1200" style="height: 400px;"></div>
-	
-	
+  
+   <div class="row" style="margin-top:100px;">
+   <div class="col-md-2">
+   <div style="width:160px; background:green;" class="img-circle">
+    <img src="images/shield3.png" alt="Bird" style="width:160px;">
 
-  <hr>
-    <div class="row">
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
-    
+   </div>   
+      </div>   
+   <div class="col-md-4">
+   <h1>Гарантия</h1>
+   Вы платите за результат. Препарат может смыть дождём даже на следующий день после обработки. Если инсектицид потеряет эффективность в течение 45 дней, мы проведём повторную обработку совершенно бесплатно.
+   </div>   
+   
+   
+
+   <div class="col-md-4">
+   <h1>Широкий спектр</h1>
+   Обработка участков,хоз.помещений, промышленных объектов, детских лагерей, летних кафе, зон отдыха в Саратове и Энгельсе от гусениц, клещей, листовертки, пауков, муравьев и прочих вредителей.
+   </div>   
+   
+         <div class="col-md-2">
+   <div style="width:160px; background:green;" class="img-circle">
+    <img src="images/everywhere3.png" alt="Bird" style="width:160px;">
+
+   </div>   
+      </div>   
   </div>
-  <hr>
-  <div class="row">
-    <h2>Page Content</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-    Aliquam in felis sit amet augue.
+   
+   
+   	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/handshake2.jpg" data-natural-width="1540" data-natural-height="800" style="height: 200px; margin-top:80px;">
+	   <div class="container-fluid bg-1 text-center" style="color:white; font-weight: bold;
+ font-family:'Roboto';
+ font-size:25pt;
+">
+	   <h1 style=" margin-top:50px;">Индивидуальная ценовая политика для заказов от 10 соток <br> Звоните <br>53-47-53,  58-33-08</h1>
+	   </div>
+</div>
+   
+   
+   
+   <div class="container-fluid bg-1 text-center" style="margin-top:90px;">
+   <h1>
+   Наши предложения (цена указана за 100 м²)
+         </h1>   
   </div>
+  <div class="row" style="margin-top:50px;">
+   <div class="col-md-4 ">
+   <div style="width:100%; background:#F0F0F0; border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
+   <img src="images/mosq.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+   <h4 style="height:30px;">
+Обработка от комаров
+ </h4>
+ 
+ 
+ 
+    						<div class="product-price ">
+							
+									<span class="product-price-old" style="color:#F0F0F0;">
+										)    
+	</span>	
+											<strong class="product-price-current">
+										250<span class="price-symbol-rub">р.</span>
+	</strong>	
+	</div>	
+ 
+ <button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block" style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+   </div>
+   
+
+
+
+   
+   </div>
+    <div class="col-md-4">
+	  <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px; position: relative;" class="container-fluid bg-1 text-center">
+	    <div style="height:70px; width:70px;background:green;color:white; line-height: 70px; font-weight: bold; margin-top:12px; position: absolute;
+
+ font-size:12pt;" class="img-circle">
+АКЦИЯ!
+ </div>	
+   <img src="images/mosq_and_tick.png" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+    <h4 style="height:30px;">
+Обработка от комаров и клещей
+</h4>
+  <div class="row" style="margin-top:10px;">
+ <div class="col-md-4 ">
+
+ 	</div>	
+ <div class="col-md-4 ">
+<div class="product-price ">
+							
+									<span class="product-price-old">
+										360 р.
+	</span>	
+											<strong class="product-price-current">
+										250<span class="price-symbol-rub">р.</span> 
+	</strong>	
+	</div>	
+		</div>	
+<div class="col-md-4 ">
+	</div>		
+		</div>	
+<button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block" style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+
+   </div>
+	</div>
+	 <div class="col-md-4" >
+	   <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
+    <img src="images/all.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+	<h4 style="height:30px"> 
+Обработка широкого спектра
+</h4>
+<div class="product-price ">
+							
+									<span class="product-price-old" style="color:#F0F0F0;">
+										)    
+	</span>	
+											<strong class="product-price-current">
+										400<span class="price-symbol-rub">р.</span>
+	</strong>	
+	</div>	
+
+<button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block" style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+   </div>
+  </div>
+  </div>
+
+<!--
   <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/gamak.jpg" data-natural-width="1920" data-natural-height="1080" style="height: 400px;">
    <h1>Page Content</h2>
   </div>
+  -->
+  
+    <div class="row" style="margin-top:10px;">
+	<div class="col-md-3" >
+	 </div>
+	<div class="col-md-6" style="background:#F0F0F0;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
+     <div style="width:100px; background:green; float:left;" class="img-circle">
+    <img src="images/car.png" alt="Bird" style="width:100px">
+
+   </div>
+   <h4 style="margin-left:110px; margin-top:20px">
+  При расположении участка дальше чем 10км за чертой Саратова и Энгельса в стоимость входит дополнительная сумма в размере 7 рублей за км. 
+  </h4>
+   </div>
+  <div class="col-md-3" >
+  
+   </div>
+   
+
 </div>
 
-<hr>
+   
+    <div class="row" style="margin-top:10px;">
+   
+   <div class="col-md-2" >
+   
+     </div>
+   
+   <div class="col-md-8 text-center">
+
+   <h1>ПОЛУЧИТЬ СКИДКУ 5% ПРОСТО!</h1>
+   <h3>Расскажи о нас в любой социальной сети</h3>
+   
+   </div>
+
+   
+   <div class="col-md-2" >
+   
+     </div>
+   
+  </div>
+
+
+
+
+
 
 <div class="container">
 	<div class="row">
@@ -272,6 +510,45 @@ html, body {font-family:'Roboto'; }
 	
 <script type="javascript>
 </script>
+	
+	<script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ // после загрузки DOM
+
+	$('form[id^=gform]').submit(function(e){ // вешаем событие на отправку формы
+		e.preventDefault(); // выключаем стандартное действие отправки
+		var form = $(this); // запомним форму в переменной
+	
+		var data = form.serialize(); // сериализуем данные формы в строку для отправки, обратите внимание что атрибуты name у полей полностью сопдают с нэймами у полей самой гугл формы
+
+		$.ajax({ // инициализируем аякс
+            url: "https://docs.google.com/forms/d/1YkK5hlHmeNb_86oV1bmqUoP2zrSeWXpOdH0pyTEV-YA/formResponse", 
+            data: data, // данные  которые мы сериализовали
+            type: "POST", // постом
+            dataType: "xml", // ответ ждем в формате xml
+            beforeSend: function(){ // перед отправкой
+            	form.find('button').attr('disabled'); // отключим кнопку
+            },
+            statusCode: { // после того как пришел ответ от сервера
+                0: function (){ // это успешный случай
+                	form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>'); // сунем в форму сообщение что все ок
+                },
+                200: function (){ // это тоже успешный случай
+                	form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>'); // сунем в форму сообщение что все ок
+                }
+            }
+		});
+	});
+});
+
+</script>
+	
+	
+	
+	
+
+	
 	
 	
 </body>
