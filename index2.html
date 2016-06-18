@@ -1,0 +1,19 @@
+<button type="button" onclick="loadData()">Load Spreadsheet Data</button>
+<div id="display"></div>
+
+<script type="text/javascript">
+
+      function loadData() {
+          var url = "https://docs.google.com/spreadsheets/d/1g0glH1B2mkDXLBdA-27qzY7dJUE5fnKtWPI6jSfoI5k/pub?gid=0&range=D1&single=true&output=csv";
+          xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function () {
+              if (xmlhttp.readyState == 4) {
+                  document.getElementById("display").innerHTML = xmlhttp.responseText;
+                  //alert(xmlhttp.responseText);
+              }
+          };
+          xmlhttp.open("GET", url, true);
+          xmlhttp.send(null);
+      }
+	  
+	  </script>
