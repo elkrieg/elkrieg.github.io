@@ -138,6 +138,8 @@ html, body {font-family:'Roboto'; }
 </head>
 
 <body>
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+
 
  <div class="modal fade" id="myModal" role="dialog" >
     <div class="modal-dialog modal-sm">
@@ -180,10 +182,10 @@ html, body {font-family:'Roboto'; }
             <!-- Brand and toggle get grouped for better mobile display -->
 
          
-   <div itemscope itemtype="http://schema.org/LocalBusiness" class="row">
+   <div class="row">
 <div class="col-md-6">
 <div class="container-fluid bg-1">
-<h4 style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;"><span itemprop="name">СТОПКОМАР <span itemprop="address">САРАТОВ</span></span></h4>
+<a itemprop="url" href="http://стопкомар.рф"><h4 style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;"><span itemprop="name">СТОПКОМАР САРАТОВ</span></h4></a>
 <h4 class="hidden-md hidden-sm hidden-xs" style="margin-top:0px"><span itemprop="description">Обработка участков от комаров в саратовской области</span></h4>
 </div>
 </div>
@@ -392,14 +394,14 @@ html, body {font-family:'Roboto'; }
    Наши предложения (цена указана за 100 м²)
          </h1>   
   </div>
-  <div class="row" style="margin-top:50px;">
-  	<div class="col-md-2 ">
-  		</div>
-   <div class="col-md-4 ">
+  
+  <div class="row" style="margin-top:50px;"  itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+
+   <div class="col-md-4 " itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
    <div style="width:100%; background:#F0F0F0; border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
    <img src="images/mosq.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
    <h4 style="height:30px;">
-Обработка от комаров
+ <span itemprop="name">Обработка от комаров</span>
  </h4>
  
  
@@ -410,7 +412,7 @@ html, body {font-family:'Roboto'; }
 										)    
 	</span>	
 											<strong class="product-price-current">
-										250<span class="price-symbol-rub">р.</span>
+										<span itemprop="price" content="250.00">250</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span>
 	</strong>	
 	</div>	
  
@@ -422,7 +424,7 @@ html, body {font-family:'Roboto'; }
 
    
    </div>
-    <div class="col-md-4">
+    <div class="col-md-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 	  <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px; position: relative;" class="container-fluid bg-1 text-center">
 	    <div style="height:70px; width:70px;background:green;color:white; line-height: 70px; font-weight: bold; margin-top:12px; position: absolute;
 
@@ -431,7 +433,7 @@ html, body {font-family:'Roboto'; }
  </div>	
    <img src="images/mosq_and_tick.png" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
     <h4 style="height:30px;">
-Обработка от комаров и клещей
+ <span itemprop="name">Обработка от комаров и клещей</span>
 </h4>
   <div class="row" style="margin-top:10px;">
  <div class="col-md-4 ">
@@ -444,7 +446,7 @@ html, body {font-family:'Roboto'; }
 										360 р.
 	</span>	
 											<strong class="product-price-current">
-										250<span class="price-symbol-rub">р.</span> 
+										<span itemprop="price" content="250.00">250</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span> 
 	</strong>	
 	</div>	
 		</div>	
@@ -455,12 +457,12 @@ html, body {font-family:'Roboto'; }
 
    </div>
 	</div>
-	<!--
-	 <div class="col-md-4" >
+	
+	 <div class="col-md-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 	   <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
-    <img src="images/all.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+    <img src="images/all2.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
 	<h4 style="height:30px"> 
-Обработка широкого спектра
+ <span itemprop="name">Обработка широкого спектра</span>
 </h4>
 <div class="product-price ">
 							
@@ -468,14 +470,14 @@ html, body {font-family:'Roboto'; }
 										)    
 	</span>	
 											<strong class="product-price-current">
-										400<span class="price-symbol-rub">р.</span>
+										<span itemprop="price" content="250.00">400</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span>
 	</strong>	
 	</div>	
 
 <button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
    </div>
   </div>
-  -->
+
   </div>
 
 <!--
@@ -565,12 +567,13 @@ html, body {font-family:'Roboto'; }
       <div class="col-md-12"><p></p></div>
 	  
 	  <div itemscope itemtype="http://schema.org/LocalBusiness">
-<a itemprop="url" href="стопкомар.рф"><div itemprop="name"><strong>СТОПКОМАР САРАТОВ</strong></div>
+<a itemprop="url" href="http://стопкомар.рф"><div itemprop="name"><strong>СТОПКОМАР САРАТОВ</strong></div>
 </a>
-<div itemprop="description">Обработка от комаров в саратовской области</div>
 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="addressCountry">Россия</span>, <span itemprop="addressRegion">
 
-<span itemprop="addressCountry">Россия</span>, <span itemprop="addressRegion">саратовская область</span>, город <span itemprop="addressLocality">Саратов</span>
+  <span itemprop="areaServed">
+  </span>саратовская область</span></span>, город <span itemprop="addressLocality">Саратов</span>
 
 </div>
 </div>
@@ -683,7 +686,7 @@ Share = {
 	
 
 	
-	
+	</div>
 	
 </body>
 
