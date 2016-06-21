@@ -1,217 +1,90 @@
+
 <!DOCTYPE html>
 <head>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="обработка от комаров в саратовской области">
-    <meta name="author" content="">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>СтопКомар - обработка от комаров в Саратове</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-	    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico?v=2' />
-	    
-	
-<style type="text/css">
-.btn-danger{
-border: 0px double black;
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=description content="обработка от комаров в саратовской области">
+<meta name=author content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>СтопКомар - обработка от комаров в Саратове</title>
+<link href="css/bootstrap.min.css" rel=stylesheet>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico?v=2'/>
+<style>.btn-danger{border:0px double black;}
+h2{font-family:'Roboto Slab', serif;}
+h1{font-family:'Roboto Slab', serif;font-size:33px;}
+input.navphone{float:left;height:100px;padding:15px 15px;font-size:18px;line-height:20px;margin-top:20px;}
+.bg-parallax-dark{width:100%;height:auto;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;background-position:center center;}
+html, body{font-family:'Roboto';}
+.trigger_text{color:white;line-height:0.9;font-weight:bold;font-family:'Roboto';font-size:12pt;margin-left:10px;margin-right:10px;margin-top:4px;}
+.title_h1{color:white;font-size:30pt;margin-bottom:20px;margin-top:5px;}
+.row-eq-height{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.product-price{display:inline-block;position:relative;min-height:4.7rem;}
+.product-price-old{color:#636466;font-weight:700;display:block;margin-bottom:-.3rem;text-decoration:line-through;}
+.product-price-current{display:block;color:#000;font-size:3rem;line-height:3rem;padding-top:0.0rem;}
+.highlighted-text-message{font-size:1.4rem;line-height:1.7rem;vertical-align:middle;color:#333;}
+.highlighted-text-primary{background:#fff200!important;}
+.modal{text-align:center;}
+@media screen and (min-width:768px){.modal:before{display:inline-block;vertical-align:middle;content:" ";height:100%;}
 }
-h2{
-font-family: 'Roboto Slab', serif;
-}
-h1{
-font-family: 'Roboto Slab', serif;
-font-size: 33px;
-}
-input.navphone {
-  float: left;
-  height: 100px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 20px;
-}
-.bg-parallax-dark {
-  width: 100%;
-  height: auto;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-}
-html, body {font-family:'Roboto'; }
-.trigger_text {
- color: white;
- line-height: 0.9;
- font-weight: bold;
- font-family:'Roboto';
- font-size:12pt;
- margin-left: 10px;
- margin-right: 10px;
- margin-top: 4px;
-}
-.title_h1 {
- color: white;
- font-size:30pt;
-  margin-bottom: 20px;
-   margin-top: 5px;
-}
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-.product-price {
-    display: inline-block;
-    position: relative;
-    min-height: 4.7rem;
-}
-.product-price-old {
-    color: #636466;
-    font-weight: 700;
-    display: block;
-    margin-bottom: -.3rem;
-    text-decoration: line-through;
-}
-.product-price-current {
-    display: block;
-    color: #000;
-    font-size: 3rem;
-    line-height: 3rem;
-    padding-top: 0.0rem;
-}
-.highlighted-text-message {
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-    vertical-align: middle;
-    color: #333;
-}
-.highlighted-text-primary {
-    background: #fff200!important;
-}
-.modal {
-  text-align: center;
-}
-@media screen and (min-width: 768px) { 
-  .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
-}
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
- .modal-header, .close {
-      background-color: #5cb85c;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  }
-</style>
-
+.modal-dialog{display:inline-block;text-align:left;vertical-align:middle;}
+.modal-header, .close{background-color:#5cb85c;color:white !important;text-align:center;font-size:30px;}
+.modal-footer{background-color:#f9f9f9;}</style>
 </head>
-
 <body>
 <div itemscope itemtype="http://schema.org/LocalBusiness">
-
-
- <div class="modal fade" id="myModal" role="dialog" >
-    <div class="modal-dialog modal-sm">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="padding:35px 50px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 style="background-color: #5cb85c;
+<div class="modal fade" id=myModal role=dialog>
+<div class="modal-dialog modal-sm">
+<div class=modal-content>
+<div class=modal-header style="padding:35px 50px;">
+<button type=button class=close data-dismiss=modal>&times;</button>
+<h4 style="background-color: #5cb85c;
       color:white !important;
       text-align: center;
       font-size: 30px;">ОСТАВЬТE ЗАЯВКУ</h4>
-        </div>
-        <div class="modal-body" style="padding:40px 50px;">
-<form role="form" id="gform-jquery">
-  <div class="form-group">
-    <label for="email" style="color:black;">Имя</label>
-       <input name="entry.1876161667" class="form-control" id="pwd">
-  </div>
-  <div class="form-group">
-    <label for="pwd" style="color:black;">Телефон</label>
-
-	<input name="entry.740778092" class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
-  </div>
-  <button onClick="ga('send', 'event', 'Contacts', 'Leave');" type="submit" class="btn btn-success btn-block " style="background:#5cb85c ;" style="width=12px;">МЫ ВАМ ПЕРЕЗВОНИМ</button>
+</div>
+<div class=modal-body style="padding:40px 50px;">
+<form role=form id=gform-jquery>
+<div class=form-group>
+<label for=email style="color:black;">Имя</label>
+<input name=entry.1876161667 class=form-control id=pwd>
+</div>
+<div class=form-group>
+<label for=pwd style="color:black;">Телефон</label>
+<input name=entry.740778092 class=form-control name=phone id=af_phone value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
+</div>
+<button onclick="ga('send', 'event', 'Contacts', 'Leave');" type=submit class="btn btn-success btn-block " style="background:#5cb85c ;" style="width=12px;">МЫ ВАМ ПЕРЕЗВОНИМ</button>
 </form>
-        </div>
-     <div class="modal-footer">
-          НАШИ КОНТАКТЫ<br>53-47-53<br>58-33-08
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #E8E8E8; ">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-         
-   <div class="row">
-<div class="col-md-6">
+</div>
+<div class=modal-footer>
+НАШИ КОНТАКТЫ<br>53-47-53<br>58-33-08
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role=navigation style="background-color: #E8E8E8; ">
+<div class=container>
+<div class=row>
+<div class=col-md-6>
 <div class="container-fluid bg-1">
-<a itemprop="url" href="http://стопкомар.рф"><h4 style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;"><span itemprop="name">СТОПКОМАР САРАТОВ</span></h4></a>
-<h4 class="hidden-md hidden-sm hidden-xs" style="margin-top:0px"><span itemprop="description">Обработка участков от комаров в саратовской области</span></h4>
+<a itemprop=url href="http://стопкомар.рф"><h4 style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;"><span itemprop=name>СТОПКОМАР САРАТОВ</span></h4></a>
+<h4 class="hidden-md hidden-sm hidden-xs" style=margin-top:0px><span itemprop=description>Обработка участков от комаров в саратовской области</span></h4>
 </div>
 </div>
-
-    <div class="col-md-2">
-    
-    </div>
-<div class="col-md-4">
+<div class=col-md-2>
+</div>
+<div class=col-md-4>
 <div class="container-fluid bg-1 push-left; font-weight:bold">
 <h4 class="hidden-md hidden-sm hidden-xs" style="margin-bottom:0px; font-family: 'Roboto Slab', serif; font-weight:bold;">Телефоны:</h4>
-<h4  style="margin-top:0px"><span itemprop="telephone">58-33-08</span>, <span itemprop="telephone">53-47-53</span></h4>
- </div>
+<h4 style=margin-top:0px><span itemprop=telephone>58-33-08</span>, <span itemprop=telephone>53-47-53</span></h4>
 </div>
-  </div>
-
-  
-  
-  
-			
-				
-    
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-        </div>
-        <!-- /.container -->
-    </nav>
-
-	
-
-
-	
-<div class="container" style="margin-top:40px;">
-
-
-
-
-
-<div  style=" background: url(images/obrabotka3.jpg) no-repeat; background-position:top;  margin-bottom:30px;">
-<div class="row">
-<div class="col-md-3"></div>
+</div>
+</div>
+</div>
+</nav>
+<div class=container style="margin-top:40px;">
+<div style=" background: url(images/obrabotka3.jpg) no-repeat; background-position:top;  margin-bottom:30px;">
+<div class=row>
+<div class=col-md-3></div>
 <div class="col-md-5 col-xs-12">
 <h1 style="font-size: 70px;  font-family: 'Roboto Slab', serif; font-weight: bold; color:orange;">АКЦИЯ!</h1>
 <h1 style="text-shadow: black 1px 0px, black 1px 1px, black 0px 1px, black -1px 1px, black -1px 0px, black -1px -1px, black 0px -1px, black 1px -1px;   font-size: 34px; font-family: 'Roboto'; color:white;  font-weight: no; margin-bottom:0px">Закажи обработку от комаров до 15 июля</h1>
@@ -219,459 +92,260 @@ html, body {font-family:'Roboto'; }
 </div>
 <div class="col-md-4 hidden-xs hidden-sm">
 <div style="width=200px; margin-left: 50px; margin-right: 50px; margin-top: 40px; margin-bottom: 40px; border-radius: 5px; background:rgba(100,100,100,0.5); padding: 10px 40px 30px 40px; color:white;">
-<form id="gform-jquery-3" role="form" >
-  <div class="form-group">
-    <label for="email" style="color:white;">Имя</label>
-       <input name="entry.1876161667" class="form-control" id="pwd">
-  </div>
-  <div class="form-group">
-    <label for="pwd" style="color:white;">Телефон</label>
-
-	<input name="entry.740778092" class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
-  </div>
-  <button onClick="ga('send', 'event', 'Contacts', 'Leave');" type="submit" class="btn btn-danger btn-block " style="background:#FF621F ;" style="width=12px;">ЗАКАЗАТЬ</button>
+<form id=gform-jquery-3 role=form>
+<div class=form-group>
+<label for=email style="color:white;">Имя</label>
+<input name=entry.1876161667 class=form-control id=pwd>
+</div>
+<div class=form-group>
+<label for=pwd style="color:white;">Телефон</label>
+<input name=entry.740778092 class=form-control name=phone id=af_phone value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
+</div>
+<button onclick="ga('send', 'event', 'Contacts', 'Leave');" type=submit class="btn btn-danger btn-block " style="background:#FF621F ;" style="width=12px;">ЗАКАЗАТЬ</button>
 </form>
 </div></div>
-
 </div>
 </div>
-
-  <div class="row">
-  <div class="col-xs-12 visible-xs-block visible-sm-block">
+<div class=row>
+<div class="col-xs-12 visible-xs-block visible-sm-block">
 <div style="margin-left: 00px; margin-right: 00px; margin-top: 10px; margin-bottom: 10px; border-radius: 5px; background:rgba(100,100,100,0.5); padding: 10px 40px 30px 40px; color:white;">
-<form id="gform-jquery-2" role="form" >
-  <div class="form-group">
-    <label for="email" style="color:white;">Имя</label>
-       <input name="entry.1876161667" class="form-control" id="pwd">
-  </div>
-  <div class="form-group">
-    <label style="color:white;">Телефон</label>
-
-	<input name="entry.740778092" class="form-control" type="text" name="phone" id="af_phone" value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
-  </div>
-  <br>
-  <button onClick="ga('send', 'event', 'Contacts', 'Leave');" type="submit" class="btn btn-danger btn-block " style="background:#FF621F ;" style="width=12px;">ЗАКАЗАТЬ</button>
+<form id=gform-jquery-2 role=form>
+<div class=form-group>
+<label for=email style="color:white;">Имя</label>
+<input name=entry.1876161667 class=form-control id=pwd>
+</div>
+<div class=form-group>
+<label style="color:white;">Телефон</label>
+<input name=entry.740778092 class=form-control name=phone id=af_phone value="" placeholder="+7 (___) ___-__-__" required title="Введите телефон в формате +7(495)123-12-12">
+</div>
+<br>
+<button onclick="ga('send', 'event', 'Contacts', 'Leave');" type=submit class="btn btn-danger btn-block " style="background:#FF621F ;" style="width=12px;">ЗАКАЗАТЬ</button>
 </form>
 </div></div>
-  </div>
-  
-<div class="row" style="margin-bottom:30px;">
-  <div class="col-md-8" >
-    <h2>Раздражают комары?</h2>
-	
-	Перепробовали все способы борьбы с кровососами, но они продолжают портить отдых на вашем участке? Дым от "спиральки" сдувает любой ветерок? Новомодные ловушки для комаров наоборот привлекают насекомых со всей округи и совсем не помогают?
-	Инсектицидные крема? Вы действительно думаете, что обмазывать ими себя и своих близких с ног до головы - хорошая идея? Эти ужасно раздражающие существа способны свести на нет всё удовольствие от отдыха за городом. А если учесть, 
-	что комары могут переносить различные вирусные заболевания, то становится ясно - от комаров нужно избавиться. Кто знает, кого они кусали до вас?
-    </div>
-	  <div class="col-md-4">
-	  <img src="images/mosquito19_360x241.jpg" alt="Mountain View" style="width:100%;">
-	  </div>
-  </div>
-  
-  <div class="row" style="margin-bottom:30px;">
-  	  <div class="col-md-4 ">
-	  <img src="images/klesh_360x238.jpg" alt="Mountain View" style="width:100%;">
-	  </div>
-  <div class="col-md-8" >
-    <h2>Клещи опасны для жизни</h2>
-	
-	Половина клещей в саратовской области переносит энцефалит. Если вовремя не среагировать, болезнь приводит к летальному исходу. Если вас укусил клещ, то ни в коем случае не выбрасывайте его. Насекомое нужно нести в клиническую лабораторию для анализа. Своевременно среагировав на 
-	укус вы можете избежать развития этой тяжёлой болезни. Эти маленькие но коварные насекомые могут заставить в любой момент бросить все дела, оставив за спиной недожаренный шашлык или растопленную баню. Выходные будут испорчены. 
-    </div>
-
-  </div>
-  
-   <h2>Выход есть - обработка участка от насекомых</h2>
-	
-	Специальный, безвредный для человека, раствор распыляется на места размножения и обитания насекомых с помощью генератора холодного тумана. Паразиты не смогут плодиться на вашем участке и больше не принесут вам проблем.
-  
-    	<div style="margin-top:30px;" class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/backg.jpg" data-natural-width="850" data-natural-height="531" style="height: 200px;">
-
-
-	
-	<div class="container-fluid bg-1 text-center">
-<div class="row" style="margin-top:10px;">
-<div class="col-md-4">
-   <img src="images/leaf-min.png" alt="Bird">
-    <h3 class="trigger_text">Безопасно: безвредно для детей, домашних животных и растений</h3>
-	  </div>
-	 <div class="col-md-4">   <img src="images/pig-min.png" alt="Bird">
-    <h3 class="trigger_text">Выгодно: обработай участок и забудь о средствах от комаров на полтора месяца</h3>  </div>
-	 <div class="col-md-4">   <img src="images/30-min.png" alt="Bird">
-    <h3 class="trigger_text">Надёжно: бесплатное обслуживание в течение гарантийного срока - 30 дней</h3>  </div>
-  </div>
-
-  </div>
-	 
-	
-
-  </div>
-
-   
-   
-  <div class="row" style="margin-top:100px;">
-   <div class="col-md-2">
-   <div style="width:160px; background:green;" class="img-circle">
-    <img src="images/ex3-min.png" alt="Bird" style="width:160px">
-
-   </div>   
-      </div>   
-   <div class="col-md-4">
-   <h1>7 лет на рынке</h1>
-   Многолетний опыт борьбы с комарами и другими вредителями в Саратове, Энгельсе и области, опытные сотрудники, сотни очищенных участков и довольных клиентов.
-   </div>   
-   
-   
-
-   <div class="col-md-4">
-   <h1>Уникальный рецепт</h1>
-   Собственные смеси инсектицидных растворов на основе безопасных, сертифицированных препаратов. За годы работы мы смогли подобрать наиболее эффективные сочетания компонентов.
-   </div>   
-   
-         <div class="col-md-2">
-   <div style="width:160px; background:green;" class="img-circle">
-    <img src="images/ch3-min.png" alt="Bird" style="width:160px;">
-
-   </div>   
-      </div>   
-  </div>
-  
-  
-   <div class="row" style="margin-top:100px;">
-   <div class="col-md-2">
-   <div style="width:160px; background:green;" class="img-circle">
-    <img src="images/sh3-min.png" alt="Bird" style="width:160px;">
-
-   </div>   
-      </div>   
-   <div class="col-md-4">
-   <h1>Гарантия</h1>
-   Вы платите за результат. Препарат может смыть в сезон дождей. Если инсектицид потеряет эффективность в течение 30 дней, мы проведём повторную обработку совершенно бесплатно.
-   </div>   
-   
-   
-
-   <div class="col-md-4">
-   <h1>Широкий спектр</h1>
-   Обработка участков,хоз.помещений, промышленных объектов, детских лагерей, летних кафе, зон отдыха в Саратове и Энгельсе от гусениц, клещей, листовертки, пауков, муравьев и прочих вредителей.
-   </div>   
-   
-         <div class="col-md-2">
-   <div style="width:160px; background:green;" class="img-circle">
-    <img src="images/ev3-min.png" alt="Bird" style="width:160px;">
-
-   </div>   
-      </div>   
-  </div>
-   
-   
-   	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/hand2.jpg" data-natural-width="1140" data-natural-height="592"  style="margin-top:80px;">
-	   <div class="container-fluid bg-1 text-center" style="color:white; font-weight: bold;
+</div>
+<div class=row style="margin-bottom:30px;">
+<div class=col-md-8>
+<h2>Раздражают комары?</h2>
+Перепробовали все способы борьбы с кровососами, но они продолжают портить отдых на вашем участке? Дым от "спиральки" сдувает любой ветерок? Новомодные ловушки для комаров наоборот привлекают насекомых со всей округи и совсем не помогают?
+Инсектицидные крема? Вы действительно думаете, что обмазывать ими себя и своих близких с ног до головы - хорошая идея? Эти ужасно раздражающие существа способны свести на нет всё удовольствие от отдыха за городом. А если учесть,
+что комары могут переносить различные вирусные заболевания, то становится ясно - от комаров нужно избавиться. Кто знает, кого они кусали до вас?
+</div>
+<div class=col-md-4>
+<img src="images/mosquito19_360x241.jpg" alt="Mountain View" style="width:100%;">
+</div>
+</div>
+<div class=row style="margin-bottom:30px;">
+<div class="col-md-4 ">
+<img src="images/klesh_360x238.jpg" alt="Mountain View" style="width:100%;">
+</div>
+<div class=col-md-8>
+<h2>Клещи опасны для жизни</h2>
+Половина клещей в саратовской области переносит энцефалит. Если вовремя не среагировать, болезнь приводит к летальному исходу. Если вас укусил клещ, то ни в коем случае не выбрасывайте его. Насекомое нужно нести в клиническую лабораторию для анализа. Своевременно среагировав на
+укус вы можете избежать развития этой тяжёлой болезни. Эти маленькие но коварные насекомые могут заставить в любой момент бросить все дела, оставив за спиной недожаренный шашлык или растопленную баню. Выходные будут испорчены.
+</div>
+</div>
+<h2>Выход есть - обработка участка от насекомых</h2>
+Специальный, безвредный для человека, раствор распыляется на места размножения и обитания насекомых с помощью генератора холодного тумана. Паразиты не смогут плодиться на вашем участке и больше не принесут вам проблем.
+<div style="margin-top:30px;" class=parallax-container data-parallax=scroll data-position=top data-bleed=10 data-image-src="./images/backg.jpg" data-natural-width=850 data-natural-height=531 style="height: 200px;">
+<div class="container-fluid bg-1 text-center">
+<div class=row style="margin-top:10px;">
+<div class=col-md-4>
+<img src="images/leaf-min.png" alt=Bird>
+<h3 class=trigger_text>Безопасно: безвредно для детей, домашних животных и растений</h3>
+</div>
+<div class=col-md-4> <img src="images/pig-min.png" alt=Bird>
+<h3 class=trigger_text>Выгодно: обработай участок и забудь о средствах от комаров на полтора месяца</h3> </div>
+<div class=col-md-4> <img src="images/30-min.png" alt=Bird>
+<h3 class=trigger_text>Надёжно: бесплатное обслуживание в течение гарантийного срока - 30 дней</h3> </div>
+</div>
+</div>
+</div>
+<div class=row style="margin-top:100px;">
+<div class=col-md-2>
+<div style="width:160px; background:green;" class=img-circle>
+<img src="images/ex3-min.png" alt=Bird style=width:160px>
+</div>
+</div>
+<div class=col-md-4>
+<h1>7 лет на рынке</h1>
+Многолетний опыт борьбы с комарами и другими вредителями в Саратове, Энгельсе и области, опытные сотрудники, сотни очищенных участков и довольных клиентов.
+</div>
+<div class=col-md-4>
+<h1>Уникальный рецепт</h1>
+Собственные смеси инсектицидных растворов на основе безопасных, сертифицированных препаратов. За годы работы мы смогли подобрать наиболее эффективные сочетания компонентов.
+</div>
+<div class=col-md-2>
+<div style="width:160px; background:green;" class=img-circle>
+<img src="images/ch3-min.png" alt=Bird style="width:160px;">
+</div>
+</div>
+</div>
+<div class=row style="margin-top:100px;">
+<div class=col-md-2>
+<div style="width:160px; background:green;" class=img-circle>
+<img src="images/sh3-min.png" alt=Bird style="width:160px;">
+</div>
+</div>
+<div class=col-md-4>
+<h1>Гарантия</h1>
+Вы платите за результат. Препарат может смыть в сезон дождей. Если инсектицид потеряет эффективность в течение 30 дней, мы проведём повторную обработку совершенно бесплатно.
+</div>
+<div class=col-md-4>
+<h1>Широкий спектр</h1>
+Обработка участков,хоз.помещений, промышленных объектов, детских лагерей, летних кафе, зон отдыха в Саратове и Энгельсе от гусениц, клещей, листовертки, пауков, муравьев и прочих вредителей.
+</div>
+<div class=col-md-2>
+<div style="width:160px; background:green;" class=img-circle>
+<img src="images/ev3-min.png" alt=Bird style="width:160px;">
+</div>
+</div>
+</div>
+<div class=parallax-container data-parallax=scroll data-position=top data-bleed=10 data-image-src="./images/hand2.jpg" data-natural-width=1140 data-natural-height=592 style="margin-top:80px;">
+<div class="container-fluid bg-1 text-center" style="color:white; font-weight: bold;
  font-family:'Roboto';
  font-size:25pt;
 ">
-	   <h1 style=" margin-top:50px; margin-bottom:50px;">Скидки до 20% при заказе обработки участка от 15 соток <br> Звоните <br>53-47-53,  58-33-08</h1>
-	   </div>
+<h1 style=" margin-top:50px; margin-bottom:50px;">Скидки до 20% при заказе обработки участка от 15 соток <br> Звоните <br>53-47-53, 58-33-08</h1>
 </div>
-   
-   
-   
-   <div class="container-fluid bg-1 text-center" style="margin-top:90px;">
-   <h1>
-   Наши предложения (цена указана за 100 м²)
-         </h1>   
-  </div>
-  
-  <div class="row" style="margin-top:50px;"  itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
-
-   <div class="col-md-4 " itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-   <div style="width:100%; background:#F0F0F0; border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
-   <img src="images/mosq.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
-   <h4 style="height:30px;">
- <span itemprop="name">Обработка от комаров</span>
- </h4>
- 
- 
- 
-    						<div class="product-price ">
-							
-									<span class="product-price-old" style="color:#F0F0F0;">
-										)    
-	</span>	
-											<strong class="product-price-current">
-										<span itemprop="price" content="250.00">250</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span>
-	</strong>	
-	</div>	
- 
- <button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
-   </div>
-   
-   <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
-   Рейтинг - <span itemprop="ratingValue">4.7</span> из 5 на основе <span itemprop="reviewCount">14</span> отзывов
-   </div>
-
-
-   
-   </div>
-    <div class="col-md-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-	  <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px; position: relative;" class="container-fluid bg-1 text-center">
-	    <div style="height:70px; width:70px;background:green;color:white; line-height: 70px; font-weight: bold; margin-top:12px; position: absolute;
- font-size:12pt;" class="img-circle">
+</div>
+<div class="container-fluid bg-1 text-center" style="margin-top:90px;">
+<h1>
+Наши предложения (цена указана за 100 м²)
+</h1>
+</div>
+<div class=row style="margin-top:50px;" itemprop=hasOfferCatalog itemscope itemtype="http://schema.org/OfferCatalog">
+<div class="col-md-4 " itemprop=itemListElement itemscope itemtype="http://schema.org/Offer">
+<div style="width:100%; background:#F0F0F0; border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
+<img src="images/mosq.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+<h4 style="height:30px;">
+<span itemprop=name>Обработка от комаров</span>
+</h4>
+<div class="product-price ">
+<span class=product-price-old style="color:#F0F0F0;">
+)
+</span>
+<strong class=product-price-current>
+<span itemprop=price content=250.00>250</span><span class=price-symbol-rub itemprop=priceCurrency content=RUB>р.</span>
+</strong>
+</div>
+<button href="#myModal" data-toggle=modal type=submit class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+</div>
+<div itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
+Рейтинг - <span itemprop=ratingValue>4.7</span> из 5 на основе <span itemprop=reviewCount>14</span> отзывов
+</div>
+</div>
+<div class=col-md-4 itemprop=itemListElement itemscope itemtype="http://schema.org/Offer">
+<div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px; position: relative;" class="container-fluid bg-1 text-center">
+<div style="height:70px; width:70px;background:green;color:white; line-height: 70px; font-weight: bold; margin-top:12px; position: absolute;
+ font-size:12pt;" class=img-circle>
 АКЦИЯ!
- </div>	
-   <img src="images/mosq_and_tick.png" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
-    <h4 style="height:30px;">
- <span itemprop="name">Обработка от комаров и клещей</span>
+</div>
+<img src="images/mosq_and_tick.png" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+<h4 style="height:30px;">
+<span itemprop=name>Обработка от комаров и клещей</span>
 </h4>
-  <div class="row" style="margin-top:10px;">
- <div class="col-md-4 ">
-
- 	</div>	
- <div class="col-md-4 ">
-<div class="product-price ">
-							
-									<span class="product-price-old">
-										360 р.
-	</span>	
-											<strong class="product-price-current">
-										<span itemprop="price" content="250.00">250</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span> 
-	</strong>	
-	</div>	
-		</div>	
+<div class=row style="margin-top:10px;">
 <div class="col-md-4 ">
-	</div>		
-		</div>	
-<button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
-
-   </div>
-   <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
-   Рейтинг - <span itemprop="ratingValue">5</span> из 5 на основе <span itemprop="reviewCount">33</span> отзывов
-   </div>
-	</div>
-	
-	 <div class="col-md-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-	   <div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
-    <img src="images/all2.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
-	<h4 style="height:30px"> 
- <span itemprop="name">Обработка от всех насекомых</span>
+</div>
+<div class="col-md-4 ">
+<div class="product-price ">
+<span class=product-price-old>
+360 р.
+</span>
+<strong class=product-price-current>
+<span itemprop=price content=250.00>250</span><span class=price-symbol-rub itemprop=priceCurrency content=RUB>р.</span>
+</strong>
+</div>
+</div>
+<div class="col-md-4 ">
+</div>
+</div>
+<button href="#myModal" data-toggle=modal type=submit class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+</div>
+<div itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
+Рейтинг - <span itemprop=ratingValue>5</span> из 5 на основе <span itemprop=reviewCount>33</span> отзывов
+</div>
+</div>
+<div class=col-md-4 itemprop=itemListElement itemscope itemtype="http://schema.org/Offer">
+<div style="width:100%; background:#F0F0F0;border-radius: 5px;margin-top: 4px" class="container-fluid bg-1 text-center">
+<img src="images/all2.png" alt="Mountain View" style="width:200px; margin-left:5%; margin-right:5%; margin-top:5%;">
+<h4 style=height:30px>
+<span itemprop=name>Обработка от всех насекомых</span>
 </h4>
 <div class="product-price ">
-							
-									<span class="product-price-old" style="color:#F0F0F0;">
-										)    
-	</span>	
-											<strong class="product-price-current">
-										<span itemprop="price" content="250.00">400</span><span class="price-symbol-rub" itemprop="priceCurrency" content="RUB">р.</span>
-	</strong>	
-	</div>	
-
-<button href="#myModal" data-toggle="modal" type="submit" class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
-   </div>
-      <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
-   Рейтинг - <span itemprop="ratingValue">4.6</span> из 5 на основе <span itemprop="reviewCount">5</span> отзывов
-   </div>
-   
-  </div>
-
-  </div>
-
-<!--
-  <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/gamak.jpg" data-natural-width="1920" data-natural-height="1080" style="height: 400px;">
-   <h1>Page Content</h2>
-  </div>
-  -->
-  <!--
-    <div class="row" style="margin-top:10px;">
-	<div class="col-md-3" >
-	 </div>
-	<div class="col-md-6" style="background:#F0F0F0;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
-     <div style="width:100px; background:green; float:left;" class="img-circle">
-    <img src="images/car.png" alt="Bird" style="width:100px">
-   </div>
-   <h4 style="margin-left:110px; margin-top:20px">
-  При расположении участка дальше чем 10км за чертой Саратова и Энгельса в стоимость входит дополнительная сумма в размере 7 рублей за км. 
-  </h4>
-   </div>
-  <div class="col-md-3" >
-  
-   </div>
-   
+<span class=product-price-old style="color:#F0F0F0;">
+)
+</span>
+<strong class=product-price-current>
+<span itemprop=price content=250.00>400</span><span class=price-symbol-rub itemprop=priceCurrency content=RUB>р.</span>
+</strong>
 </div>
--->
-
-   
-    <div class="row" style="margin-top:50px;">
-   
-   <div class="col-md-2" >
-   
-     </div>
-   
-   <div class="col-md-8 text-center">
-
-   <h1>ПОЛУЧИТЬ СКИДКУ 5% ПРОСТО!</h1>
-   <h3>Расскажи о нас в любой социальной сети</h3>
-   
-   </div>
-
-   
-   <div class="col-md-2" >
-   
-     </div>
-   
-  </div>
-
-
-<div class="container">
-	<div class="row" style="margin-top:30px">
-	
-<div class="col-md-4 text-center" >
+<button href="#myModal" data-toggle=modal type=submit class="btn btn-danger btn-block " style="background:#FF621F; margin-top: 20px; margin-bottom: 10px" style="width=12px;">ЗАКАЗАТЬ</button>
+</div>
+<div itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating" class="container-fluid bg-1 text-center">
+Рейтинг - <span itemprop=ratingValue>4.6</span> из 5 на основе <span itemprop=reviewCount>5</span> отзывов
+</div>
+</div>
+</div>
+<div class=row style="margin-top:50px;">
+<div class=col-md-2>
+</div>
+<div class="col-md-8 text-center">
+<h1>ПОЛУЧИТЬ СКИДКУ 5% ПРОСТО!</h1>
+<h3>Расскажи о нас в любой социальной сети</h3>
+</div>
+<div class=col-md-2>
+</div>
+</div>
+<div class=container>
+<div class=row style=margin-top:30px>
+<div class="col-md-4 text-center">
 <a style="cursor: pointer;" onclick="Share.odnoklassniki('http://стопкомар.рф/','Обработка участков в саратовской области от комаров и прочих вредителей. #стопкомарсаратов')">
-<div class="hvr-float" style="width:100%; background:#F6881F;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
+<div class=hvr-float style="width:100%; background:#F6881F;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
 <h1 style="margin-top:10px; margin-bottom:10px; color:white">Рассказать в Одноклассниках</h1>
- </div>
- 	</a>
-		
-   </div>
-
-<div class="col-md-4 text-center" >
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center">
 <a style="cursor: pointer;" onclick="Share.vkontakte('http://стопкомар.рф/','СТОПКОМАР САРАТОВ','http://xn--80atggbelbj.xn--p1ai/images/everywhere2.png','Обработка участков в саратовской области от комаров и прочих вредителей. #стопкомарсаратов')">
-<div class="hvr-float" style="width:100%; background:#597da3;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
+<div class=hvr-float style="width:100%; background:#597da3;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
 <h1 style="margin-top:10px; margin-bottom:10px; color:white">Рассказать во Вконтакте</h1>
- </div>
-  </a>
-   </div>
-
-	
-<div class="col-md-4 text-center" >
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center">
 <a onclick="Share.facebook('http://стопкомар.рф/','СТОПКОМАР САРАТОВ','http://xn--80atggbelbj.xn--p1ai/images/everywhere2.png','Обработка участков в саратовской области от комаров и прочих вредителей. #стопкомарсаратов')" style="cursor: pointer;">
-<div class="hvr-float" style="width:100%; background:#3b5998;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
+<div class=hvr-float style="width:100%; background:#3b5998;border-radius: 90px;margin-top: 4px; padding-top:10px; padding-bottom:10px; padding-left:10px;">
 <h1 style="margin-top:10px; margin-bottom:10px; color:white">Рассказать на Facebook</h1>
- </div>
- </a>
-   </div>
-    
-    </div>
 </div>
-
-
-
-<div class="container" style="margin-top:300px">
-	<div class="row">
-      <div class="col-md-12"><p></p></div>
-	  
-	  <div>
-<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-<span itemprop="addressCountry">Россия</span>, <span itemprop="addressRegion">
-
-  <span itemprop="areaServed">
-  саратовская область</span></span>, город <span itemprop="addressLocality">Саратов</span>
-
+</a>
 </div>
 </div>
-
-    </div>
 </div>
-	
-	
-	
-
-    <!-- jQuery -->
-    <script async src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<div class=container style=margin-top:300px>
+<div class=row>
+<div class=col-md-12><p></p></div>
+<div>
+<div itemprop=address itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop=addressCountry>Россия</span>, <span itemprop=addressRegion>
+<span itemprop=areaServed>
+саратовская область</span></span>, город <span itemprop=addressLocality>Саратов</span>
+</div>
+</div>
+</div>
+</div>
+<script async src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.min.js"></script>
-	
 <script type="javascript>
 </script>
 	
-	<script async src="js/jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ // после загрузки DOM
-	$('form[id^=gform]').submit(function(e){ // вешаем событие на отправку формы
-		e.preventDefault(); // выключаем стандартное действие отправки
-		var form = $(this); // запомним форму в переменной
-	
-		var data = form.serialize(); // сериализуем данные формы в строку для отправки, обратите внимание что атрибуты name у полей полностью сопдают с нэймами у полей самой гугл формы
-		$.ajax({ // инициализируем аякс
-            url: "https://docs.google.com/forms/d/1YkK5hlHmeNb_86oV1bmqUoP2zrSeWXpOdH0pyTEV-YA/formResponse", 
-            data: data, // данные  которые мы сериализовали
-            type: "POST", // постом
-            dataType: "xml", // ответ ждем в формате xml
-            beforeSend: function(){ // перед отправкой
-            	form.find('button').attr('disabled'); // отключим кнопку
-            },
-            statusCode: { // после того как пришел ответ от сервера
-                0: function (){ // это успешный случай
-                	form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>'); // сунем в форму сообщение что все ок
-                },
-                200: function (){ // это тоже успешный случай
-                	form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>'); // сунем в форму сообщение что все ок
-                }
-            }
-		});
-	});
-});
-Share = {
-	vkontakte: function(purl, ptitle, pimg, text) {
-		url  = 'http://vkontakte.ru/share.php?';
-		url += 'url='          + encodeURIComponent(purl);
-		url += '&title='       + encodeURIComponent(ptitle);
-		url += '&description=' + encodeURIComponent(text);
-		url += '&image='       + encodeURIComponent(pimg);
-		url += '&noparse=true';
-		Share.popup(url);
-	},
-	odnoklassniki: function(purl, text) {
-		url  = 'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1';
-		url += '&st.comments=' + encodeURIComponent(text);
-		url += '&st._surl='    + encodeURIComponent(purl);
-		Share.popup(url);
-	},
-	facebook: function(purl, ptitle, pimg, text) {
-		url  = 'http://www.facebook.com/sharer.php?s=100';
-		url += '&p[title]='     + encodeURIComponent(ptitle);
-		url += '&p[summary]='   + encodeURIComponent(text);
-		url += '&p[url]='       + encodeURIComponent(purl);
-		url += '&p[images][0]=' + encodeURIComponent(pimg);
-		Share.popup(url);
-	},
-	twitter: function(purl, ptitle) {
-		url  = 'http://twitter.com/share?';
-		url += 'text='      + encodeURIComponent(ptitle);
-		url += '&url='      + encodeURIComponent(purl);
-		url += '&counturl=' + encodeURIComponent(purl);
-		Share.popup(url);
-	},
-	mailru: function(purl, ptitle, pimg, text) {
-		url  = 'http://connect.mail.ru/share?';
-		url += 'url='          + encodeURIComponent(purl);
-		url += '&title='       + encodeURIComponent(ptitle);
-		url += '&description=' + encodeURIComponent(text);
-		url += '&imageurl='    + encodeURIComponent(pimg);
-		Share.popup(url)
-	},
-	popup: function(url) {
-		window.open(url,'','toolbar=0,status=0,width=626,height=436');
-	}
-};
-</script>
-	
-	
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-79392026-1', 'auto');
-  ga('send', 'pageview');
-</script>
-	
-	
-	</div>
-	
+	<script async src=" js/jquery.js"></script>
+<script>$(document).ready(function(){$('form[id^=gform]').submit(function(e){e.preventDefault();var form=$(this);var data=form.serialize();$.ajax({url:"https://docs.google.com/forms/d/1YkK5hlHmeNb_86oV1bmqUoP2zrSeWXpOdH0pyTEV-YA/formResponse",data:data,type:"POST",dataType:"xml",beforeSend:function(){form.find('button').attr('disabled');},statusCode:{0:function(){form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>');},200:function(){form.html('<h4>Спасибо!</h4><p>Мы с вами свяжемся</p>');}}});});});Share={vkontakte:function(purl,ptitle,pimg,text){url='http://vkontakte.ru/share.php?';url+='url='+encodeURIComponent(purl);url+='&title='+encodeURIComponent(ptitle);url+='&description='+encodeURIComponent(text);url+='&image='+encodeURIComponent(pimg);url+='&noparse=true';Share.popup(url);},odnoklassniki:function(purl,text){url='http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1';url+='&st.comments='+encodeURIComponent(text);url+='&st._surl='+encodeURIComponent(purl);Share.popup(url);},facebook:function(purl,ptitle,pimg,text){url='http://www.facebook.com/sharer.php?s=100';url+='&p[title]='+encodeURIComponent(ptitle);url+='&p[summary]='+encodeURIComponent(text);url+='&p[url]='+encodeURIComponent(purl);url+='&p[images][0]='+encodeURIComponent(pimg);Share.popup(url);},twitter:function(purl,ptitle){url='http://twitter.com/share?';url+='text='+encodeURIComponent(ptitle);url+='&url='+encodeURIComponent(purl);url+='&counturl='+encodeURIComponent(purl);Share.popup(url);},mailru:function(purl,ptitle,pimg,text){url='http://connect.mail.ru/share?';url+='url='+encodeURIComponent(purl);url+='&title='+encodeURIComponent(ptitle);url+='&description='+encodeURIComponent(text);url+='&imageurl='+encodeURIComponent(pimg);Share.popup(url)},popup:function(url){window.open(url,'','toolbar=0,status=0,width=626,height=436');}};</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-79392026-1','auto');ga('send','pageview');</script>
+</div>
 </body>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href="css/hover.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel=stylesheet type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel=stylesheet type='text/css'>
+<link href="css/hover.min.css" rel=stylesheet>
 </html>
