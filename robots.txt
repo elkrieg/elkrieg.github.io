@@ -10,4 +10,4 @@ User-agent: Yandex
 Allow: /images/
 Disallow: /js/
 Disallow: /css/
-Host: xn--80atggbelbj.xn--p1ai
+Host: https://xn--80atggbelbj.xn--p1ai
